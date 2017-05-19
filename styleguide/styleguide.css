@@ -1,0 +1,250 @@
+/* 1. BASE: basisstijlen van de HTML-elementen */
+
+/* Typografie */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+body{
+    font-family: 'Gotham', sans-serif;
+    
+}
+h1{
+    font-weight: bold;
+    color: crimson;
+}
+.subtitle{
+    font-size: 28px;
+    color: black;
+}
+
+p {
+   
+    line-height: 1.5;
+    font-weight: 500;
+    color: black;
+}
+
+label{
+    color: hsl( 66, 60%, 56%);
+}
+
+table{
+    color:crimson;
+}
+.button{
+    font-weight:100;
+}
+
+header>img{
+    width:30%;
+}
+
+/* Hyperlinks */
+a,
+a:visited {
+    color: purple;
+    text-decoration: none;
+}
+a:hover {
+    color:crimson;
+    text-decoration: none;
+}
+
+/* 2. COMPONENTS: onderdelen, worden in de algemene lay-out geplaatst */
+
+/* Knoppen */
+.button {
+    border-radius: .30em;
+    border-style: solid;
+    
+    display: inline-block;
+    font-weight: Thin;
+    padding: .25em .5em;
+    text-decoration: none;
+}
+.button:hover {
+    text-decoration: none;
+}
+.button--default,
+.button--default:active,
+.button--default:visited {
+    background-color:    crimson;
+    color: #FFF;
+}
+
+
+
+
+
+/* Kleuren */
+.colours__colour--a {
+    background-color: crimson;
+}
+.colours__colour--b {
+    background-color: hsl( 0, 0%, 0%);
+    color: white;
+}
+.colours__colour--c {
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+/* Patronen */
+.patterns__pattern--a {
+    background-image: url("../assets/webd achtergrond.png");
+    background-size:350%;
+}
+.patterns__pattern--b {
+    background-image: url("../assets/desk.jpg");
+    background-size:125%;
+}
+
+
+/* Kernwoorden */
+.keywords__keyword--a {
+    color: hsl(  0, 100%, 40%);
+    font-size: 3.75rem;
+}
+.keywords__keyword--b {
+    color: hsl(180, 100%, 40%);
+    font-size: 1.5rem;
+}
+.keywords__keyword--c {
+    color: hsl(240, 100%, 40%);
+    font-size: 2.5rem;
+}
+.keywords__keyword--d {
+    color: hsl(300, 100%, 40%);
+    font-size: 3.25rem;
+}
+
+
+
+
+
+
+
+
+/* 1. BASE: basisstijlen van de HTML-elementen */
+
+header.style-tile ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header.style-tile li {
+    display: inline;
+}
+header.style-tile a {
+    background-color: #CCC;
+    color: #FFF;
+    display: inline-block;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+header.style-tile a:hover {
+    background-color: #999;
+}
+
+main.style-tile h1.style-tile,
+aside.style-tile h2.style-tile {
+    border-bottom: 1px solid #666;
+    font-size: 1rem;
+    line-height: 2em;
+    margin-top: 1em;
+}
+
+h1.style-tile,
+h2.style-tile,
+h3.style-tile,
+h4.style-tile,
+h5.style-tile,
+h6.style-tile {
+    font-family: inherit;
+}
+
+article.style-tile p.style-tile,
+footer.style-tile p {
+    font-family: inherit;
+}
+
+body > footer a,
+body > footer a:visited {
+    color: #00F;
+}
+
+table.style-tile {
+    line-height: 2rem;
+    width: 100%
+}
+table.style-tile thead th {
+    border-bottom: 1px solid #666;
+    text-align: left;
+}
+table.style-tile tbody th {
+    text-align: right;
+    width: 1%;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* 2. COMPONENTS: onderdelen, worden in de algemene lay-out geplaatst */
+
+.colours__colour {
+    
+    border: .25rem solid #FFF;
+    box-shadow: 0 0 1px #000;
+    float: left;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.colours__colour + .colours__colour {
+    margin-left: 1rem;
+}
+
+.keywords {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.keywords__keyword {
+    display: inline;
+}
+
+.patterns__pattern {
+    background-color: #EEE;
+    border: .25rem solid #FFF;
+    box-shadow: 0 0 1px #000;
+    float: left;
+    height: 8.5rem;
+    width: 8.5rem;
+}
+.patterns__pattern + .patterns__pattern {
+    margin-left: 1rem;
+}
+
+/* 3. LAYOUT: algemene lay-out */
+
+header.style-tile,
+main.style-tile,
+footer.style-tile {
+    clear: both;
+    margin: auto;
+    max-width: 60rem;
+}
+
+article.style-tile,
+aside.style-tile {
+    float: left;
+    width: 29rem;
+}
+aside.style-tile {
+    margin-left: 2rem;
+}
+
