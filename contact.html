@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/grid.css">
 </head>
 <body>
 
@@ -27,26 +28,42 @@
 
 
 <h1>CONTACT</h1>
+<div class="grid__container">
 <div class="subtitle">How to reach us</div>
 
 <center><div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2509.135597034211!2d3.774969215606111!3d51.03211627955982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37428f9be56c7%3A0xad7f5f9c766fca5e!2sHouw+10%2C+9050+Gent!5e0!3m2!1snl!2sbe!4v1493407468838" 
-width="850" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></div></center>
+width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe></div></center>
 
 <br>
 <center><img class="horizontal_line" src="./assets/horizontal_line.png" alt="line"></center>
+</div>
 
 <div class="subtitle">What can we do for you ?</div>
 
-<!-- form -->
-<div class="formulier">
-<center>
-<form> <table><tr>
-  <td> <label for="name" >Name</label> <br>
-  <input type="text" id="name" name="name"></td>
 
-  <td> <label for="e-mail" >E-mail</label>  <br>
-  <input type="text" id="e-mail" name="e-mail"></td>
- </tr></table>
+<div class="grid__container">
+  <div class="grid__row">
+    <div class="grid__offset-1 grid__column-3">
+      <p>
+        Benedenstraat 37<br>9340 Lede<br>+32 477 92 77 10<br>Jellyknows21@gmail.com
+        </p>
+    </div>
+    <div class="grid__column-7">
+        <!-- form -->
+<div class="formulier">
+
+<form> 
+  <div class="grid__column-5">
+    <label for="name" >Name</label> <br>
+  <input type="text" id="name" name="name"><br>
+  </div>
+   
+<div class="grid__column-7">
+  <label for="e-mail" >E-mail</label>  <br>
+  <input type="text" id="e-mail" name="e-mail">
+</div>
+  
+
 
   <div><label for="message">Message</label><br>
    <textarea rows="4" cols="50" id="message" name="message"></textarea></div>
@@ -56,8 +73,12 @@ width="850" height="500" frameborder="0" style="border:0" allowfullscreen></ifra
     <a href="sent.html">
 <button class="button" style="vertical-align:middle"><span>Send </span></button>
  </a>
- </center>
+
 </div>
+    </div>
+  </div>
+</div>
+
 <!--footer-->
 
 <footer>
