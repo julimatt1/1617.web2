@@ -81,8 +81,8 @@ h2{
 
 /*tekst*/
 h1 {
-    font-family:"Poppins", sans-serif;
-    font-weight: bold;
+    font-family:"Poppins", sans-serif !important;
+    font-weight: bold !important;
     font-size: 35px;
     color: crimson;
     border-top: 1.5px solid crimson;
@@ -387,8 +387,6 @@ section h2 {
 .demo a:hover {
 	opacity: .5;
 }
-
-
 
 
 
