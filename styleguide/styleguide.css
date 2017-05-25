@@ -58,7 +58,6 @@ a:hover {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-family:"Poppins; sans-serif";
   font-size: 17px;
   padding: 8px 25px;
   
@@ -93,6 +92,14 @@ a:hover {
   right: 0;
 }
 
+.arrow-left span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
 
 
