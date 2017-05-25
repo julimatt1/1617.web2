@@ -85,8 +85,8 @@ h1 {
     font-weight: bold !important;
     font-size: 35px;
     color: crimson;
-    border-top: 1.5px solid crimson;
-    border-bottom: 1.5px solid crimson;
+    border-top: 1px solid crimson;
+    border-bottom: 1px solid crimson;
     text-align: center;
 }
 
